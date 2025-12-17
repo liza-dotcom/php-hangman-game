@@ -1,0 +1,176 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1a0b2e, #120622);
+    color: #e6e0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Shared container for forms */
+.container, 
+.set-level {
+    background: #2b1740;
+    padding: 3em 4em;
+    border-radius: 1.5em;
+    box-shadow: 0 0.8em 2em rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 30em;
+    max-width: 90%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    color: #f0d9ff;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1.1em;
+    margin: 1em 0 0.5em;
+    color: #d5c0f0;
+}
+
+/* Text input */
+input[type="text"] {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border: 0.1em solid #4a2a69;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    background: #3a2354;
+    color: #f5eaff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #a970ff;
+    background: #2c1846;
+}
+
+/* Radio buttons layout */
+.set-level label {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 1.1em;
+    color: #d9c4f0;
+}
+
+input[type="radio"] {
+    accent-color: #a970ff; /* modern browser violet accent */
+}
+
+/* Buttons */
+button {
+    padding: 1em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background: #8b4dff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: background 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #a970ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5em #a970ff;
+}
+
+/* Error messages */
+.error {
+    color: #ff80bf;
+    font-size: 0.9em;
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Score tables container */
+.score-table {
+    background: #2b1740;
+    padding: 3em 4em;
+    border-radius: 1.5em;
+    box-shadow: 0 0.8em 2em rgba(0, 0, 0, 0.6);
+    width: 60em;
+    max-width: 95%;
+    text-align: center;
+}
+
+/* Difficulty headings */
+.score-table h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    color: #f0d9ff;
+    border-bottom: 0.1em solid #4a2a69;
+    padding-bottom: 0.5em;
+}
+
+/* Table styling */
+.score-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    background: #3a2354;
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+
+/* Table header */
+.score-table th {
+    background: #8b4dff;
+    color: #fff;
+    padding: 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Table rows */
+.score-table td {
+    padding: 1em;
+    font-size: 1em;
+    color: #e6e0f5;
+    border-bottom: 0.1em solid #4a2a69;
+    text-align: center;
+}
+
+/* Alternate row background */
+.score-table tr:nth-child(even) {
+    background: #2c1846;
+}
+
+/* Hover effect */
+.score-table tr:hover {
+    background: #4a2a69;
+    transition: background 0.3s ease;
+}
+
+/* New game button container */
+.new-game-btn {
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+.new-game-btn button:hover {
+    background: #a970ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5em #a970ff;
+}
